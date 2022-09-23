@@ -19,7 +19,6 @@ export const withList = () => (
       <li>is simply dummy text of the printing and typesetting industry.</li>
       <li>is simply dummy text of the printing and typesetting industry.</li>
       <li>is simply dummy text of the printing and typesetting industry.</li>
-      <buttom>Matricule-se Agora</buttom>
     </ul>
   </Hero>
 );
