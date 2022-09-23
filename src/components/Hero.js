@@ -1,24 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const Hero = () => (
+import "./Hero.css";
+
+const Hero = ({ title, children }) => (
   <div>
     <div>
-      <h1>Ganhe sua liberdade para ir e vir</h1>
-      <ul>
-        <li>
-          is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been
-        </li>
-        <li>
-          is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been
-        </li>
-        <li>
-          is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been
-        </li>
-        <buttom>Matricule-se Agora</buttom>
-      </ul>
+      <h1>{title}</h1>
+      {children}
     </div>
   </div>
 );
+
+export default Hero;
