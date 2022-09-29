@@ -49,28 +49,6 @@ const Content = styled.div`
   }
 `;
 
-// const Title = styled.h1`
-//   position: relative;
-//   font-weight: 700;
-//   letter-spacing: 2px;
-//   color: ${colorGreen};
-
-//   margin-bottom: 25px;
-//   padding-bottom: 25px;
-//   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     bottom: -3px;
-//     background-color: ${colorGreenLight};
-//     height: 5px;
-//     width: 70px;
-//   }
-
-// `;
-
 const Hero = ({ image, children }) => (
   <Root image={image}>
     <Container>
