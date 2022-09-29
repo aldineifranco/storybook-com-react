@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
-const colorGreen = "#b1d34b";
+// const colorGreen = "#b1d34b";
 const colorGreenLight = "#ebf4d2";
 
 const Root = styled.div`
@@ -36,6 +36,7 @@ const Content = styled.div`
   li {
     font-size: 20px;
     font-weight: 300;
+    color: ${colorGreenLight};
   }
 
   ul {
@@ -48,35 +49,31 @@ const Content = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  position: relative;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: ${colorGreen};
+// const Title = styled.h1`
+//   position: relative;
+//   font-weight: 700;
+//   letter-spacing: 2px;
+//   color: ${colorGreen};
 
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+//   margin-bottom: 25px;
+//   padding-bottom: 25px;
+//   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    background-color: ${colorGreenLight};
-    height: 5px;
-    width: 70px;
-  }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: -3px;
+//     background-color: ${colorGreenLight};
+//     height: 5px;
+//     width: 70px;
+//   }
 
-  strong {
-    color: ${colorGreenLight};
-  }
-`;
+// `;
 
-const Hero = ({ image, title, children }) => (
+const Hero = ({ image, children }) => (
   <Root image={image}>
     <Container>
-      <Title>{title}</Title>
       <Content>{children}</Content>
     </Container>
   </Root>
@@ -84,7 +81,6 @@ const Hero = ({ image, title, children }) => (
 
 Hero.prototype = {
   image: PropTypes.string,
-  title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   children: PropTypes.node,
 };
 
