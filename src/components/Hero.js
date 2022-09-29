@@ -1,11 +1,19 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Title = styled.h1`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
+`;
+
+const Root = styled.div`
+  ${(props) => css`
+    background: url(${props.image}), rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-position: center;
+  `}
 `;
 
 const Content = styled.div`
@@ -25,13 +33,13 @@ const Content = styled.div`
   }
 `;
 
-const Hero = ({ title, children }) => (
-  <div>
+const Hero = ({ image, title, children }) => (
+  <Root image={image}>
     <div>
       <Title>{title}</Title>
       <Content>{children}</Content>
     </div>
-  </div>
+  </Root>
 );
 
 export default Hero;
