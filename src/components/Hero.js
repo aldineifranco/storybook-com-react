@@ -9,10 +9,13 @@ const Title = styled.h1`
 `;
 
 const Root = styled.div`
+  color: #fff;
+
   ${(props) => css`
     background: url(${props.image}), rgba(0, 0, 0, 0.4);
     background-size: cover;
     background-position: center;
+    background-blend-mode: overlay;
   `}
 `;
 
