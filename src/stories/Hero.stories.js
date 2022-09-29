@@ -13,7 +13,7 @@ export default {
 
 export const usage = () => (
   <Hero title="Ganhe sua liberdade para ir e vir" image={BgImage01}>
-    <p>A auto escola lider em aprovação.</p>,
+    <p>A auto escola lider em aprovação.</p>
   </Hero>
 );
 

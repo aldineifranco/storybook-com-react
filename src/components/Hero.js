@@ -8,6 +8,7 @@ const Title = styled.h1`
 
 const Root = styled.div`
   color: #fff;
+  padding: 100px 0;
 
   ${(props) => css`
     background: url(${props.image}), rgba(0, 0, 0, 0.4);
@@ -15,6 +16,20 @@ const Root = styled.div`
     background-position: center;
     background-blend-mode: overlay;
   `}
+`;
+
+const Container = styled.div`
+  width: 100%;
+  padding: 0 8px;
+
+  @media (min-width: 768px) {
+    padding: 0 16px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1140px;
+    margin: 0 auto;
+  }
 `;
 
 const Content = styled.div`
@@ -36,10 +51,10 @@ const Content = styled.div`
 
 const Hero = ({ image, title, children }) => (
   <Root image={image}>
-    <div>
+    <Container>
       <Title>{title}</Title>
       <Content>{children}</Content>
-    </div>
+    </Container>
   </Root>
 );
 
