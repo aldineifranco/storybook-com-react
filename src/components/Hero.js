@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
 const Title = styled.h1`
@@ -57,5 +58,11 @@ const Hero = ({ image, title, children }) => (
     </Container>
   </Root>
 );
+
+Hero.prototype = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  children: PropTypes.node,
+};
 
 export default Hero;
