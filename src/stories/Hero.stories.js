@@ -1,6 +1,8 @@
 import React from "react";
 
 import Hero from "../components/Hero";
+import GlobalStyle from "../components/GlobalStyle";
+
 import BgImage01 from "./assets/GettyImages-1183506875.jpg";
 import BgImage02 from "./assets/GettyImages-927402888.jpg";
 
