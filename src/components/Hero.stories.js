@@ -1,4 +1,5 @@
 import React from "react";
+import { text } from "@storybook/addon-knobs";
 
 import Hero from "./Hero";
 import BgImage01 from "../stories/assets/GettyImages-1183506875.jpg";
@@ -13,8 +14,8 @@ export default {
 export const usage = () => (
   <Hero image={BgImage01}>
     <Heading>
-      <h1>Ganhe sua liberdade para ir e vir</h1>
-      <p>A auto escola lider em aprovação.</p>
+      <h1>{text("Title", "Ganhe sua liberdade para ir e vir")}</h1>
+      <p>{text("Text", "A auto escola lider em aprovação.")}</p>
     </Heading>
   </Hero>
 );
