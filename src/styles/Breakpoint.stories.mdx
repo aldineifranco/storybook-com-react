@@ -32,7 +32,14 @@ Layout para Telas Responsivas
 
 Usando do Styled Component:
 
-```
+```js
+import { breakAt, BreakpointSizes } from Breakpoint;
 
+const Title = styled.h1`
+    front-size: 1rem;
 
+    ${break(BreakpointSizes.md)} {
+        font-size: 2rem;
+    }
+`;
 ```
