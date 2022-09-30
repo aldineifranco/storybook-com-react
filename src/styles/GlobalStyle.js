@@ -67,7 +67,7 @@ h4 {
 
 h5 {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 600;
 
         @media (min-width: 992px) {
         font-size: 1.5;
