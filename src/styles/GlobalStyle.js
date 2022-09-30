@@ -1,10 +1,10 @@
+import React from "react";
 import { createGlobalStyle } from "styled-components";
+import { Helmet } from "react-helmet";
 
 const colorGreenLight = "#ebf4d2";
 
 const GlobalStyle = createGlobalStyle`
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
-
 html {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -82,8 +82,18 @@ h6 {
         font-size: 1.25;
     }
 }
-
-
 `;
 
-export default GlobalStyle;
+const GlobalStyleComposed = () => (
+  <>
+    <GlobalStyle />
+    <Helmet>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
+  </>
+);
+
+export default GlobalStyleComposed;
