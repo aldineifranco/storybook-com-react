@@ -2,7 +2,7 @@ import React from "react";
 import { ThemeProvider as StyledProvider } from "styled-components";
 
 const theme = {
-  colorPrimary: "#40b385",
+  colorPrimary: "#ffc107",
 };
 
 const ThemeProvider = ({ children }) => (
