@@ -1,12 +1,23 @@
 import React from "react";
-import { actions } from "@storybook/addon-actions";
+
 import Button from "./Button";
+import styled from "styled-components";
 
 export default {
   title: "Components/Button",
   component: Button,
 };
 
-const events = actions({ onclick: "Clicado" });
+const Toolbar = styled.div`
+  & > * {
+    margin-right: 8px;
+  }
+`;
 
-export const usage = () => <Button {...events}>Meu Botão</Button>;
+export const usage = () => (
+  <Toolbar>
+    <Button>Default</Button>
+    <Button color="primary">Primary</Button>
+    <Button color="danger">Danger</Button>
+  </Toolbar>
+);
