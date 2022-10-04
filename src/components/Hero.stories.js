@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import BgImage01 from "../stories/assets/GettyImages-1183506875.jpg";
 import BgImage02 from "../stories/assets/GettyImages-927402888.jpg";
 import Heading from "./Heading";
+import Button from "./Button";
 
 export default {
   title: "Components/Hero",
@@ -33,5 +34,8 @@ export const withList = () => (
       <li>is simply dummy text of the printing and typesetting industry.</li>
       <li>is simply dummy text of the printing and typesetting industry.</li>
     </ul>
+    <Button color="primary" variant="outlined">
+      Aproveite
+    </Button>
   </Hero>
 );
