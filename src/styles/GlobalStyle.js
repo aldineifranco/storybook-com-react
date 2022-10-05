@@ -2,8 +2,6 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 import { Helmet } from "react-helmet";
 
-const colorGreenLight = "#ebf4d2";
-
 const GlobalStyle = createGlobalStyle`
 html {
     font-family: "Poppins", sans-serif;
@@ -28,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
 
       strong {
-    color: ${colorGreenLight};
+    color: ${(props) => props.theme.colors.primary.main};
   }
 }
 

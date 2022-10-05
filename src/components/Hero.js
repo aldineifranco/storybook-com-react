@@ -2,9 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
-// const colorGreen = "#b1d34b";
-const colorGreenLight = "#ebf4d2";
-
 const Root = styled.div`
   color: #fff;
   padding: 100px 0;
@@ -36,7 +33,6 @@ const Content = styled.div`
   li {
     font-size: 20px;
     font-weight: 300;
-    color: ${colorGreenLight};
   }
 
   ul {
@@ -44,8 +40,11 @@ const Content = styled.div`
     padding-left: 0;
   }
 
-  li::before {
-    content: "\\2713\\0020";
+  li {
+    &::before {
+      content: "\\2713\\0020";
+      color: ${(props) => props.theme.colors.primary.main};
+    }
   }
 `;
 
