@@ -7,6 +7,11 @@ const Root = styled.div`
 
   & h5 {
     margin: 16px 0;
+    min-height: 3.12rem;
+
+    @media (min-width: 992px) {
+      min-height: 3.9;
+    }
   }
 
   & p {
@@ -14,9 +19,42 @@ const Root = styled.div`
   }
 `;
 
+const getPrimaryColor = ({ theme }) => theme.colors.primary.main;
+
+const IconRoot = styled.div`
+  display: inline-block;
+  width: 116px;
+  height: 116px;
+  padding: 8px;
+  border-radius: 50%;
+
+  &:hover {
+    border: 1px solid ${getPrimaryColor};
+
+    > * {
+      color: #fff;
+      background-color: ${getPrimaryColor};
+    }
+  }
+`;
+
+const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ededed;
+  border-radius: 50%;
+  font-size: 32px;
+  width: 100%;
+  height: 100%;
+  color: ${getPrimaryColor};
+`;
+
 const Feature = ({ icon, title, children }) => (
   <Root>
-    <div>{icon}</div>
+    <IconRoot>
+      <IconContainer>{icon}</IconContainer>
+    </IconRoot>
     <h5>{title}</h5>
     <div>{children}</div>
   </Root>
