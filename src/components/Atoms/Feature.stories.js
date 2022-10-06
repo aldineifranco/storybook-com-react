@@ -20,7 +20,7 @@ export const usage = () => (
 );
 
 export const withGrid = () => (
-  <Grid>
+  <Grid md={4}>
     <Feature icon={<FaCloudsmith />} title="Maior plano de saúde">
       <p> is simply dummy text of the printing and typesetting industry.</p>
     </Feature>
