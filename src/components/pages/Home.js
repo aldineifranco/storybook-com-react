@@ -14,6 +14,7 @@ import {
 import Feature from "../Atoms/Feature";
 import Grid from "../Atoms/Grid";
 import Section from "../molecules/Section";
+import videoNuvens from "../../../src/assets/video.mp4";
 
 const Home = () => (
   <>
@@ -34,7 +35,7 @@ const Home = () => (
       </Button>
     </Hero>
     <Section>
-      <Grid>
+      <Grid sm={2} md={4}>
         <Feature icon={<FaCloudsmith />} title="Maior plano de saúde">
           <p> is simply dummy text of the printing and typesetting industry.</p>
         </Feature>
@@ -49,16 +50,36 @@ const Home = () => (
         </Feature>
       </Grid>
     </Section>
+
     <Section inverse>
       <Heading>
         <h2>Conheça nossos serviços</h2>
       </Heading>
     </Section>
+
     <Section>
-      <Heading>
-        <h2>Outro título com vídeo</h2>
-      </Heading>
+      <Grid md={2}>
+        <div>
+          <Heading>
+            <h2>Outro título com vídeo</h2>
+          </Heading>
+
+          <p>
+            is simply dummy text of the printing and typesetting industry is
+            simply dummy text of the printing and typesetting industry is simply
+            dummy text of the printing and typesetting industry.
+          </p>
+
+          <div>
+            <Button color="primary">Saiba Mais</Button>
+          </div>
+        </div>
+        <div>
+          <video src={videoNuvens} width="100%" autoPlay loop />
+        </div>
+      </Grid>
     </Section>
+
     <Section inverse>
       <Heading>
         <h2>Dúvidas recorrentes</h2>

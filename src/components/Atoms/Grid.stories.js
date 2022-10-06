@@ -13,7 +13,7 @@ const Box = styled.div`
 `;
 
 export const usage = () => (
-  <Grid>
+  <Grid sm={2} md={4}>
     <Box></Box>
     <Box></Box>
     <Box></Box>
