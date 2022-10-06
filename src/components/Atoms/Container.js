@@ -1,17 +1,19 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { breakAt, BreakpointSizes } from "../../styles/Breakpoint";
 
 const Container = styled.div`
   width: 100%;
   padding: 0 8px;
 
-  @media (min-width: 768px) {
+  ${breakAt(BreakpointSizes.sm)} {
     padding: 0 16px;
   }
 
-  @media (min-width: 1200px) {
+  ${breakAt(BreakpointSizes.lg)} {
     width: 1140px;
     margin: 0 auto;
+    padding: 0;
   }
 `;
 

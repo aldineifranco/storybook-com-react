@@ -1,6 +1,7 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 import { Helmet } from "react-helmet";
+import { breakAt, BreakpointSizes } from "./Breakpoint";
 
 const GlobalStyle = createGlobalStyle`
 html {
@@ -33,33 +34,35 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2.5rem;
 
-    @media (min-width: 992px) {
-        font-size: 3.75;
+    ${breakAt(BreakpointSizes.lg)}{
+      font-size: 3.75;
     }
+   
 }
 
 h2 {
     font-size: 2rem;
 
-        @media (min-width: 992px) {
-        font-size: 3.125;
+    ${breakAt(BreakpointSizes.lg)} {
+    font-size: 3.125;
     }
+
 }
 
 h3 {
     font-size: 1.9rem;
 
-        @media (min-width: 992px) {
-        font-size: 2.5;
+    ${breakAt(BreakpointSizes.lg)} {
+    font-size: 2.5;
     }
-}
+  }
 
 h4 {
     font-size: 1.3rem;
     font-weight: 600;
 
-        @media (min-width: 992px) {
-        font-size: 2.125;
+    ${breakAt(BreakpointSizes.lg)} {
+    font-size: 2.125;
     }
 }
 
@@ -67,19 +70,21 @@ h5 {
     font-size: 1.2rem;
     font-weight: 600;
 
-        @media (min-width: 992px) {
-        font-size: 1.5;
+    ${breakAt(BreakpointSizes.lg)} {
+    font-size: 1.5;
     }
+
 }
 
 h6 {
     font-size: 1.1rem;
     font-weight: 600;
 
-        @media (min-width: 992px) {
-        font-size: 1.25;
+  ${breakAt(BreakpointSizes.lg)} {
+    font-size: 1.25;
     }
 }
+
 `;
 
 const GlobalStyleComposed = () => (

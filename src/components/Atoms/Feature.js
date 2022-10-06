@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { breakAt, BreakpointSizes } from "../../styles/Breakpoint";
 
 const Root = styled.div`
   text-align: center;
@@ -9,7 +10,7 @@ const Root = styled.div`
     margin: 16px 0;
     min-height: 3.12rem;
 
-    @media (min-width: 992px) {
+    ${breakAt(BreakpointSizes.lg)} {
       min-height: 3.9;
     }
   }
