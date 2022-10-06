@@ -15,6 +15,7 @@ import Feature from "../Atoms/Feature";
 import Grid from "../Atoms/Grid";
 import Section from "../molecules/Section";
 import videoNuvens from "../../../src/assets/video.mp4";
+import Footer from "../organisms/Footer";
 
 const Home = () => (
   <>
@@ -85,6 +86,8 @@ const Home = () => (
         <h2>Dúvidas recorrentes</h2>
       </Heading>
     </Section>
+
+    <Footer />
   </>
 );
 
