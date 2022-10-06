@@ -10,6 +10,10 @@ const Content = styled.div`
     css`
       background-color: #eee;
     `}
+
+  h2 {
+    margin-top: 0;
+  }
 `;
 
 const Section = ({ inverse, children }) => (
