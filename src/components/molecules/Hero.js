@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
+import Container from "../Atoms/Container";
 
 const Root = styled.div`
   color: #fff;
@@ -14,21 +15,9 @@ const Root = styled.div`
   `}
 `;
 
-const Container = styled.div`
-  width: 100%;
-  padding: 0 8px;
-
-  @media (min-width: 768px) {
-    padding: 0 16px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 1140px;
-    margin: 0 auto;
-  }
-`;
-
 const Content = styled.div`
+  display: inline-block;
+
   p,
   li {
     font-size: 20px;
