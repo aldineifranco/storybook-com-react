@@ -16,6 +16,47 @@ import Grid from "../Atoms/Grid";
 import Section from "../molecules/Section";
 import videoNuvens from "../../../src/assets/video.mp4";
 import Footer from "../organisms/Footer";
+import ProductGrid from "../organisms/ProductGrid";
+import imageCard from "../../stories/assets/empresa .jpg";
+
+const products = [
+  {
+    id: 1,
+    title: "Título 01",
+    summary: "is simply dummy text of the printing and typesetting industry.",
+    image: imageCard,
+  },
+  {
+    id: 2,
+    title: "Título 02",
+    summary: "is simply dummy text of the printing and typesetting industry.",
+    image: imageCard,
+  },
+  {
+    id: 3,
+    title: "Título 03",
+    summary: "is simply dummy text of the printing and typesetting industry.",
+    image: imageCard,
+  },
+  {
+    id: 4,
+    title: "Título 04",
+    summary: "is simply dummy text of the printing and typesetting industry.",
+    image: imageCard,
+  },
+  {
+    id: 5,
+    title: "Título 05",
+    summary: "is simply dummy text of the printing and typesetting industry.",
+    image: imageCard,
+  },
+  {
+    id: 6,
+    title: "Título 06",
+    summary: "is simply dummy text of the printing and typesetting industry.",
+    image: imageCard,
+  },
+];
 
 const Home = () => (
   <>
@@ -55,6 +96,7 @@ const Home = () => (
     <Section inverse>
       <Heading>
         <h2>Conheça nossos serviços</h2>
+        <ProductGrid products={products} />
       </Heading>
     </Section>
 
