@@ -18,6 +18,8 @@ import videoNuvens from "../../../src/assets/video.mp4";
 import Footer from "../organisms/Footer";
 import ProductGrid from "../organisms/ProductGrid";
 import imageCard from "../../stories/assets/empresa .jpg";
+import Accordion from "../Atoms/Accordion";
+import AccordionGroup from "../Atoms/AccordionGroup";
 
 const products = [
   {
@@ -127,6 +129,23 @@ const Home = () => (
       <Heading>
         <h2>Dúvidas recorrentes</h2>
       </Heading>
+      <AccordionGroup>
+        <Accordion title="Título da dúvida Aqui">
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an u
+        </Accordion>
+        <Accordion title="Título 2 da dúvida Aqui">
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an u
+        </Accordion>
+        <Accordion title="Título 3 da dúvida Aqui">
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an u
+        </Accordion>
+      </AccordionGroup>
     </Section>
 
     <Footer />
