@@ -18,8 +18,8 @@ import videoNuvens from "../../../src/assets/video.mp4";
 import Footer from "../organisms/Footer";
 import ProductGrid from "../organisms/ProductGrid";
 import imageCard from "../../stories/assets/empresa .jpg";
-import Accordion from "../Atoms/Accordion";
-import AccordionGroup from "../Atoms/AccordionGroup";
+import Accordion from "../Atoms/Accordion/Accordion";
+import AccordionGroup from "../Atoms/Accordion/AccordionGroup";
 
 const products = [
   {
